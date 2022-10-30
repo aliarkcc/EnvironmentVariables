@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<environment names="Development">
+    <h3>Development...</h3>
+</environment>
+<environment names="Test">
+    <h3>Testteyiz...</h3>
+</environment>
+<environment names="Production">
+    <h3>Production...</h3>
+</environment>
+
+
+
+<h3>Bulunan Ortam : @ViewBag.Environment</h3>
+
+<h3>Kullanılacak Db : @ViewBag.ConnectionString</h3>
